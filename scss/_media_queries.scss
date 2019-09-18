@@ -1,0 +1,178 @@
+@import '../partials/variables';
+
+@media only screen and (max-width: 1023px) and (min-width: 678px) {
+
+  h1 {
+    font-size: 3em;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+
+  .header {
+    &__quote {
+      font-size: 2.5em;
+      line-height: 1.7em;
+    }
+
+    &__under-button-desc {
+      color: $white;
+      font-size: 1.2em;
+    }
+  }
+
+  .main {
+    &__container-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+
+    &__container-body {
+      width: 50%;
+      padding: 0 10px;
+    }
+
+    &__founders {
+      &-companies-png {
+        margin: 20px;
+      }
+    }
+
+    &__laptop {
+      .col-2 {
+        .img-wrapper-img {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .footer__list {
+    justify-content: space-between;
+    text-align: start;
+    padding: 40px 0 40px 90px;
+
+    &-section {
+      width: 20%;
+
+      &:first-child,
+      &:last-child {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+
+  h1 {
+    font-size: 3.5em;
+    font-weight: 300;
+    line-height: 70px;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+
+  .header {
+    &__quote {
+      font-size: 3.5em;
+      line-height: 1.3em;
+      letter-spacing: 4px;
+    }
+
+    &__try-now {
+      width: 200px;
+      height: 45px;
+    }
+  }
+
+  .main {
+    &__features,
+    &__founders,
+    &__brouser {
+      height: 100vh;
+    }
+
+    &__container {
+      &-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      &-body {
+        width: 33%;
+        padding: 0 20px;
+
+        &-png {
+          height: auto;
+          width: 70px;
+        }
+      }
+    }
+
+    &__laptop {
+      .col-2 {
+        .img-wrapper-img {
+          display: block;
+        }
+      }
+    }
+
+    &__founders {
+      height: auto;
+
+      &-companies-png {
+        margin: 30px;
+      }
+    }
+
+    &__subscribe {
+      padding-bottom: 30px;
+
+      &-form {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin-top: 70px;
+        align-items: flex-start;
+        height: 150px;
+
+        &-input {
+          width: 100%;
+
+          &-wrapper {
+            width: 25%;
+          }
+        }
+
+        &-button {
+          width: 22%;
+          margin-top: -15px;
+        }
+      }
+    }
+  }
+
+  .footer__list {
+    justify-content: space-between;
+    text-align: start;
+    padding: 40px 0 40px 130px;
+
+    &-section {
+      width: 20%;
+
+      &:first-child,
+      &:last-child {
+        width: 30%;
+      }
+    }
+  }
+}
+
